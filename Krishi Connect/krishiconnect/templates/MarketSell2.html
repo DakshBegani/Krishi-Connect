@@ -1,0 +1,150 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="../reset-meyer.css">
+<style type="text/css">
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-color: #77c3ec;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+}
+
+#navbar {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: right;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%; 
+}
+
+.navbar-links {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	align-items: center;
+}
+
+.navbar-links li {
+	margin-right: 20px;
+}
+
+.navbar-links a {
+	color: #fff; /* White hyperlink color */
+	text-decoration: none;
+}
+
+#container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	max-width: 1200px;
+	margin: 20px;
+}
+
+#box {
+	width: 300px;
+	margin-right: 20px;
+	padding: 20px;
+	background: #ffffff;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+label {
+	margin-bottom: 10px;
+}
+
+#machinery, #quantity, #price{
+	width: 100%;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+button[type="submit"] {
+	width: 100%;
+	padding: 10px;
+	background-color: #333;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+h2 {
+	margin: 0;
+}
+
+#table {
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #333;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+</style>
+<title>Rounded Corner Boxes</title>
+</head>
+<body>
+<div id="navbar">
+    <ul class="navbar-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+    <p>User ID: 12345</p>
+    <p>User Name: Janchit Sen</p>
+</div>
+<div id="container">
+    <div id="box">
+        <h2>Product Information</h2>
+        <label for="machinery">MACHINERY:</label>
+        <input type="text" id="machinery" name="machinery">
+        
+        <label for="quantity">QUANTITY:</label>
+        <input type="text" id="quantity" name="quantity">
+        
+        <label for="price">PRICE:</label>
+        <input type="text" id="price" name="price">
+        
+        <button type="submit">SUBMIT</button>
+    </div>
+   
+</div>
+</body>
+</html>

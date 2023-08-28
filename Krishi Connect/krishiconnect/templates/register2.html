@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% with messages = get_flashed_messages() %}
+  {% if messages %}
+    <ul class=flashes>
+    {% for message in messages %}
+      <li>{{ message }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endwith %}
+    <form action="", method="post">
+        {{ form.hidden_tag() }}
+        <div>
+            {{ form.name.label }}
+            {{ form.name }}
+        </div>
+        <div>
+            {% if form.phone.errors %}
+                <div class="invalid-feedback">
+                    {% for error in form.phone.errors %}
+                        <span>{{ error }}</span>
+                    {% endfor %}
+                    {{ form.phone.label }}
+                    {{ form.phone }}
+                </div>
+                {% else %}
+                    {{ form.phone.label }}
+                    {{ form.phone }}
+                {% endif %}
+            
+        </div>
+        <div>
+            {{ form.pincode.label }}
+            {{ form.pincode }}
+        </div>
+        <div>
+            {{ form.state.label }}
+            {{ form.state }}
+        </div>
+        <div>
+            {{ form.submit.label }}
+            {{ form.submit }}
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MARKET PLACE</title>
+</head>
+<body>
+    <h1>Provide Machinery, Quantity, Cost</h1>
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        {{ form.item }}
+        {{ form.quantity }}
+        {{ form.cost }}
+        {{ form.submit }}
+    </form>
+
+    <br><br>
+
+    <h1>MARKET PLACE</h1>
+    <table>
+        <tr>
+            <th>ID</th>
+
+            <th>Quantity</th>
+            
+            <th>Machinery</th>
+
+            <th>Cost</th>
+        </tr>
+        {% for data in data_set %}
+        <tr>
+            <td>{{ data.id }}</td>    
+
+            <td>{{ data.quantity }}</td>
+            
+            <td>{{ data.machinery }}</td>  
+
+            <td>{{ data.cost }}</td>            
+           
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style type="text/css">
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh; 
+}
+
+.dashboard-section {
+    flex: 0.7; 
+    background-color: #663300; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    z-index: 1; 
+}
+
+.dashboard-text {
+    font-size: 24px; 
+    color: #fff; 
+    font-weight: bold; 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0; 
+}
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff; 
+    background-color: #90ee90; 
+    background-size: 100% 100%;
+    position: relative;
+}
+
+
+.box1 {
+    background-image: url('image1.jpg'); 
+}
+
+.text-below {
+    margin-top: 10px;
+}
+
+h2, p, .tag {
+    margin: 0;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+</style>
+<title>Rounded Corner Boxes</title>
+background-image: url('KrishiConnect.jpg');
+</head>
+<body>
+<div class="dashboard-section">
+    <div class="dashboard-text">DASHBOARD</div>
+</div>
+<div class="container">
+    <div class="box-container">
+        <div class="box box1">
+            <h2>Market Price</h2>
+        </div>
+        <div class="box box2">
+            <h2>Inventory</h2>
+        </div>
+        <div class="box box3">
+            <h2>Weather-Monitoring</h2>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="box-container">
+        <div class="box box4">
+            <div class="tag text-below">Market Place</div>
+        </div>
+        <div class="box box5">
+            <div class="tag text-below">Crop Calendar</div>
+        </div>
+        <div class="box box6">
+            <div class="tag text-below">Government Schemes</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
